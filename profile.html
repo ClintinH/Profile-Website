@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Journey into JavaScript</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/profileStyle.css" />
+    <script defer src="main.js" type="module"></script>
+    <script defer src="pagination.js" type="module"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="overlay">
+        <h1>My Projects</h1>
+      </div>
+      <div class="home-page-box">
+        <a href="index.html" class="homeLink">
+          <h3>Home Page</h3>
+        </a>
+      </div>
+    </header>
+    <div class="flexbox-container">
+      <div class="flexbox-leftPanel">
+        <img src="./images/tictactoethumb.svg" class="ticTacThumb" />
+        <img src="./images/typingthumb.svg" class="typingThumb" />
+        <img src="./images/bankistthumb.svg" class="bankistThumb" />
+        <img src="./images/bankistwebthumb.svg" class="bankistWebThumb" />
+        <img src="./images/forkifythumb.svg" class="forkifyThumb" />
+        <img src="./images/maptythumb.svg" class="maptyThumb" />
+
+        <nav class="pagination-container">
+          <button
+            class="pagination-button"
+            id="prev-button"
+            aria-label="Previous page"
+            title="Previous page"
+          >
+            &lt;
+          </button>
+
+          <div id="pagination-numbers"></div>
+
+          <button
+            class="pagination-button"
+            id="next-button"
+            aria-label="Next page"
+            title="Next page"
+          >
+            &gt;
+          </button>
+        </nav>
+      </div>
+      <div class="flexbox-contentLoad">
+        <iframe
+          id="srcFrame"
+          title="tic-tac-toe"
+          height="520"
+          width="900"
+        ></iframe>
+      </div>
+      <div class="flexbox-rightPanel">
+        <h2>
+          Click on <br />
+          a thumbnail <br />
+          on the left to start
+        </h2>
+      </div>
+    </div>
+    <footer>
+      <div class="refrences">
+        <a
+          href="https://za.linkedin.com/in/clintin-herholdt-aa48b611b"
+          target="_blank"
+          title="Linkedin"
+          class="refrences-item"
+        >
+          <i class="linkedin-svg"></i>
+        </a>
+        <a
+          href="https://github.com/ClintinH"
+          target="_blank"
+          title="My Github"
+          class="refrences-item"
+        >
+          <i class="github-svg"></i>
+        </a>
+        <a
+          href="https://www.gitkraken.com/git-client/features"
+          target="_blank"
+          title="GitKragen Repo Manager"
+          class="refrences-item"
+        >
+          <i class="gitkraken-svg"></i>
+        </a>
+        <a
+          href="https://www.scaler.com/topics/difference-between-html-and-html5/"
+          target="_blank"
+          title="Html vs Html 5"
+          class="refrences-item"
+        >
+          <i class="html5-svg"></i>
+        </a>
+        <a
+          href="https://www.geeksforgeeks.org/difference-between-css-and-css3/"
+          target="_blank"
+          title="CSS vs CSS 3"
+          class="refrences-item"
+        >
+          <i class="css3-svg"></i>
+        </a>
+        <a
+          href="https://code.visualstudio.com/"
+          target="_blank"
+          title="VS Code Editor"
+          class="refrences-item"
+        >
+          <i class="code-svg"></i>
+        </a>
+        <div class="contactInfo">
+          <a
+            href="mailto:clintin4phone@gmail.com"
+            target="_blank"
+            title="Email Address"
+            class="refrences-item"
+          >
+            <i class="email-svg"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
