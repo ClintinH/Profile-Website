@@ -1,12 +1,13 @@
 h1 {
   font-family: "Dancing Script", cursive;
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
 h3,
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: Book Antiqua;
+  font-size: 18px;
   margin-top: 10px;
   margin-bottom: 0px;
 }
@@ -55,10 +56,12 @@ a.profileLink:hover {
   color: white;
   box-shadow: 0 0px 20px rgba(84, 1, 74, 0.7);
   border-color: rgba(255, 6, 224, 0.61);
-  background: linear-gradient(to right,
-      rgba(255, 9, 9, 0.12941176470588237),
-      #c000ffb5,
-      rgba(255, 0, 94, 0.14));
+  background: linear-gradient(
+    to right,
+    rgba(255, 9, 9, 0.12941176470588237),
+    #c000ffb5,
+    rgba(255, 0, 94, 0.14)
+  );
 }
 
 .flexbox-container {
@@ -68,7 +71,6 @@ a.profileLink:hover {
 }
 
 .flexbox-left-panel {
-  display: inline-block;
   color: black;
   padding-top: 10px;
   padding-left: 10px;
@@ -78,8 +80,8 @@ a.profileLink:hover {
 }
 
 .journeyImg {
-  min-height: 50%;
-  min-width: 50%;
+  min-height: 37%;
+  min-width: 37%;
   flex-grow: 2;
 }
 
@@ -92,7 +94,7 @@ a.profileLink:hover {
 
 .paragraaf-left-panel {
   font-family: Book Antiqua;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .paragraaf-right-panel {
@@ -103,8 +105,8 @@ a.profileLink:hover {
 .see-more-link {
   margin-top: 50px;
   margin-right: 0px;
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
 }
 
 .see-more-link :hover {
@@ -114,7 +116,7 @@ a.profileLink:hover {
 
 @media only screen and (max-width: 768px) {
   .profile-page-box {
-    top: 126px;
+    top: 106px;
   }
 
   .flexbox-container {
@@ -132,6 +134,4 @@ a.profileLink:hover {
     min-width: 30%;
     flex-grow: 2;
   }
-
-
 }

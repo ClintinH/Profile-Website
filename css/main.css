@@ -59,12 +59,11 @@ footer {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+  /* position: fixed; */
+  bottom: 0%;
   border-top: 1.5px solid #313646;
-  height: auto;
-  width: 100%;
-  height: auto;
+  /* height: auto;
+  width: 100%; */
   margin: 0;
   background-color: #181828 !important;
   /* or however high you would like */
@@ -136,10 +135,12 @@ a.refrences-item {
 a.refrences-item:hover {
   box-shadow: 0 0px 20px rgba(84, 1, 74, 0.7);
   border-color: rgba(255, 6, 224, 0.61);
-  background: linear-gradient(to right,
-      rgba(255, 9, 9, 0.12941176470588237),
-      #c000ffb5,
-      rgba(255, 0, 94, 0.14));
+  background: linear-gradient(
+    to right,
+    rgba(255, 9, 9, 0.12941176470588237),
+    #c000ffb5,
+    rgba(255, 0, 94, 0.14)
+  );
 }
 
 .linkedin-svg {

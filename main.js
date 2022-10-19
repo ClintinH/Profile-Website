@@ -133,6 +133,48 @@ siteInfo.set("maptyThumb", {
                 ${disclaimer}       
                 `,
 });
+siteInfo.set("dinoThumb", {
+  link: "https://clintin-dino-game.netlify.app",
+  title: "Dino Game",
+  description: `<ul>
+                    <h3>Information</h3>
+                    <li>1. Press a key to start game</li>
+                    <li>2. Press space bar to make the Dinosaur Character jump</li>
+                    <li>3. Jump Over as Many Cactus obstacles as you can you get the highest score</li>
+                </ul><br />
+
+                <ul>
+                    <h3>Challenges</h3>
+                    <li>1. Getting the backgrounds to move at different speeds to create look and feel</li>
+                    <li>2. Adjusting the right values for the gravity and speed so that the Dino character can jump over the cactus obstacles</li>
+                    
+                </ul><br />    
+                <a href= "https://clintin-dino-game.netlify.app"><h3>Link to website: Dino Run</h3></a>
+                <a href= "https://github.com/ClintinH/Dino_Game"><h3>Link to code</h3></a>     
+                `,
+});
+siteInfo.set("flappyThumb", {
+  link: "https://flappy-bird-flaps.netlify.app",
+  title: "Flappy Bird",
+  description: `<ul>
+                    <h3>Information</h3>
+                    <li>1. Press a key to start game</li>
+                    <li>2. Press space bar to make the bird fly up and release space bar to make the bird glyde down</li>
+                    <li>3. Move through as many pillars as possible to reach the furthers and fly the longest</li>
+                  
+                </ul><br />
+
+                <ul>
+                    <h3>Challenges</h3>
+                    <li>1. Creating a method to create the gaps in the pillars</li>
+                    <li>2. Adjusting the pillar gap just big enough for the bird to fly through</li>
+                    <li>2. getting the values of the gravity to be just the right amount so that the bird as fluent motions</li>
+                    
+                </ul><br />    
+                <a href= "https://flappy-bird-flaps.netlify.app"><h3>Link to website: Mapty workout planner</h3></a>
+                <a href= "https://github.com/ClintinH/Flappy_Bird"><h3>Link to code</h3></a>      
+                `,
+});
 
 framePanel.addEventListener("click", function (e) {
   const element = e.target.closest("img");
