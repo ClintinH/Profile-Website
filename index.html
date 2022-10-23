@@ -6,53 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Journey into JavaScript</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/mainPage.css" />
-    <script defer src="homepage.js" type="module"></script>
+    <!-- <link rel="stylesheet" href="./css/mainPage.css" /> -->
+    <script defer src="iframeLoad.js" type="module"></script>
   </head>
 
   <body>
     <header>
-      <div class="overlay">
-        <h1>My Journey</h1>
-        <h2>Clintin Herholdt</h2>
-      </div>
-      <div class="profile-page-box">
-        <a href="profile.html" class="profileLink">
-          <h3 class="profile">View Profile</h3>
-        </a>
-      </div>
+      <img class="logo" src="./images/logo.svg" />
+      <ul>
+        <li><a href="#about">Resume</a></li>
+        <li><a class="nav-link" href="#about">Certificates</a></li>
+        <li><a class="nav-link" href="#contact">myLinks</a></li>
+        <li><a class="nav-link" href="#news">Projects</a></li>
+        <li><a class="nav-link" href="#home">About</a></li>
+      </ul>
     </header>
     <div class="flexbox-container">
-      <div class="flexbox-left-panel">
-        <h2>Introduction</h2>
-        <p class="paragraaf-left-panel">
-          My Journey started with a glimpse of a web <br />
-          application. i saw my friend was working <br />
-          on It immediatly sparked my interest and<br />
-          my enthuastical curiousity began. which<br />
-          ofcoarse set me on a path of new learning <br />and adventures of an
-          exciting future of<br />
-          possibilities. I have never been afraid of a<br />
-          challenge and thus set my goal and focus to<br />
-          start my studies. It was in this process that i <br />discovered a
-          wonderful JavaScript course - <br />basic to expert on Udemy and many
-          many<br />
-          moons and struggles later I finished the course. <br /><br />
-        </p>
-        <h3>The Plan:</h3>
-        <p>
-          Creating fun awesome visual web application <br />
-          and to continue studying.
-        </p>
+      <div class="flexbox-container-top">
+        <div class="introduction-panel">
+          <div class="welcome-text">
+            <h2 aria-label="Skills &amp; Experience" class="bounce-label">
+              <span class="bounce" id="hi-text" aria-hidden="true" style="opacity: 1;">H</span>
+              <span class="bounce" id="hi-text" aria-hidden="true" style="opacity: 1;">i</span>
+              <span class="bounce" id="hi-text" aria-hidden="true" style="opacity: 1;">,</span>
+              <br>
+              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">I</span>
+              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">'</span>
+              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">m</span>             
+              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">C</span>
+              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">l</span>
+              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">i</span>
+              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">n</span>
+              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">t</span>
+              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">i</span>
+              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">n</span>
+          </h2>
+            <p class="subheading-text">Front End Developer | Designer</p>
+          </div>
+        </div>
       </div>
-      <div class="journeyImg"><img src="./images/thoughts.svg" /></div>
-      <div class="flexbox-rightPanel">
-        <h2>About Me</h2>
-        <p class="paragraaf-right-panel">
-          CREATIVE - CURIOUS - DREAMER - FUN<br />
-          - GAMER - ENTHUAST - PUNCTUAL - PROFESSIONAL
-        </p>
-        <div class="see-more-link"><img src="./images/seeMore.svg" /></div>
+      <div class="myskills">
+        <img src="./images/myskill.svg" />
+      </div>
+      <div class="flexbox-container-middle">
+        <div class="about-heading"><img src="./images/aboutheading.svg" /></div>
+          <p class="about-me-text">
+            My Journey started with a glimpse of a web application I saw my<br />
+            friend was working on. It immediatly sparked my interest and set me<br />
+            on a path learning and adventures of an exciting future of
+            possibilities.<br />
+            It was in this process that I discovered a wonderful JavaScript
+            course<br />
+            basic to expert course on Udemy and many many moons and<br />
+            struggles later I finished the course.<br />
+          </p>
+          <p class="skill-level-text">
+           Javascript skill: Junior | HTML skill: Intermediate | CSS Skill:
+           Beginner
+          </p>
+        </div>
+        <div class="project-heading">
+          <img src="./images/projectheading.svg" />
+       </div>
+      <div class="flexbox-container-bottom">        
+        <div class="flexbox-iframe-left">
+           <iframe id="srcFrame"></iframe>
+        </div>
+        <div class="flexbox-projectHeadings-right">
+            <img src="./images/circledot.svg" class="dot"/>
+             <p class="dinoLink" >Dino Game</p>
+            <img src="./images/circledot.svg" class="dot"/>
+             <p class="flappyLink">Flappy Bird</p>
+            <img src="./images/circledot.svg" class="dot"/>
+             <p class="ticTacLink">Tic-Tac-Toe</p>
+            <img src="./images/circledot.svg" class="dot"/>
+             <p class="typingLink">Speed Typing</p>
+            <img src="./images/circledot.svg" class="dot"/>
+             <p class="bankistLink">Bankist app</p>
+            <img src="./images/circledot.svg" class="dot"/>
+             <p class="bankistWebLink">Bankist Webpage</p>
+            <img src="./images/circledot.svg" class="dot"/>
+             <p class="forkifyLink">Forkify</p>
+            <img src="./images/circledot.svg" class="dot"/>
+             <p class="maptyLink">Mapty</p>
+            <button type="button" class = "website-link">
+              <a class = "webLink" href= "">More Info</a>
+            </button>
+        </div>
       </div>
     </div>
     <footer>
@@ -62,6 +102,7 @@
           target="_blank"
           title="Linkedin"
           class="refrences-item"
+          data-tooltip="visit my Linkedin"
         >
           <i class="linkedin-svg"></i>
         </a>
@@ -70,6 +111,7 @@
           target="_blank"
           title="My Github"
           class="refrences-item"
+          data-tooltip="visit my Github"
         >
           <i class="github-svg"></i>
         </a>
@@ -78,6 +120,7 @@
           target="_blank"
           title="GitKragen Repo Manager"
           class="refrences-item"
+          data-tooltip="info on Gitkraken"
         >
           <i class="gitkraken-svg"></i>
         </a>
@@ -86,6 +129,7 @@
           target="_blank"
           title="Html vs Html 5"
           class="refrences-item"
+          data-tooltip="info on HTML"
         >
           <i class="html5-svg"></i>
         </a>
@@ -94,6 +138,7 @@
           target="_blank"
           title="CSS vs CSS 3"
           class="refrences-item"
+          data-tooltip="info on CSS"
         >
           <i class="css3-svg"></i>
         </a>
@@ -102,18 +147,19 @@
           target="_blank"
           title="VS Code Editor"
           class="refrences-item"
+          data-tooltip="Vs Code Info"
         >
           <i class="code-svg"></i>
         </a>
-        <div class="contactInfo">
-          <a
+        <a
             href="mailto:clintin4phone@gmail.com"
             target="_blank"
             title="Email Address"
             class="refrences-item"
+            data-tooltip="HIRE ME!"
           >
             <i class="email-svg"></i>
-          </a>
+        </a>
         </div>
       </div>
     </footer>
