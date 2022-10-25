@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   font-family: Trebuchet MS;
@@ -20,6 +24,7 @@ li {
 
 li a:hover {
   color: #08fdd8;
+  text-decoration: underline;
 }
 
 li a {
@@ -71,7 +76,7 @@ ul {
 }
 
 .welcome-text {
-  width: 52%;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -157,6 +162,12 @@ ul {
   margin-left: 30px;
   align-items: center;
   flex-grow: 1;
+}
+
+.linkColor:hover {
+  color: #08fdd8;
+  font-style: bold;
+  text-decoration: underline;
 }
 
 .dot {

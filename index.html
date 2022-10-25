@@ -14,11 +14,11 @@
     <header>
       <img class="logo" src="./images/logo.svg" />
       <ul>
-        <li><a href="#about">Resume</a></li>
-        <li><a class="nav-link" href="#about">Certificates</a></li>
-        <li><a class="nav-link" href="#contact">myLinks</a></li>
-        <li><a class="nav-link" href="#news">Projects</a></li>
-        <li><a class="nav-link" href="#home">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a class="nav-link" href="#certificates">Certificates</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#home">Home</a></li>
       </ul>
     </header>
     <div class="flexbox-container">
@@ -32,7 +32,8 @@
               <br>
               <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">I</span>
               <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">'</span>
-              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">m</span>             
+              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">m</span> 
+              <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">&nbsp</span>   
               <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">C</span>
               <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">l</span>
               <span class="bounce" id="myName-text" aria-hidden="true" style="opacity: 1;">i</span>
@@ -49,7 +50,7 @@
         <img src="./images/myskill.svg" />
       </div>
       <div class="flexbox-container-middle">
-        <div class="about-heading"><img src="./images/aboutheading.svg" /></div>
+        <div class="about-heading" id="about"><img src="./images/aboutheading.svg" /></div>
           <p class="about-me-text">
             My Journey started with a glimpse of a web application I saw my<br />
             friend was working on. It immediatly sparked my interest and set me<br />
@@ -61,11 +62,11 @@
             struggles later I finished the course.<br />
           </p>
           <p class="skill-level-text">
-           Javascript skill: Junior | HTML skill: Intermediate | CSS Skill:
+           Javascript skill: Junior | HTML skill: Beginner | CSS Skill:
            Beginner
           </p>
         </div>
-        <div class="project-heading">
+        <div class="project-heading" id="projects">
           <img src="./images/projectheading.svg" />
        </div>
       <div class="flexbox-container-bottom">        
@@ -74,21 +75,21 @@
         </div>
         <div class="flexbox-projectHeadings-right">
             <img src="./images/circledot.svg" class="dot"/>
-             <p class="dinoLink" >Dino Game</p>
+             <p class="dinoLink linkColor" >Dino Game</p>
             <img src="./images/circledot.svg" class="dot"/>
-             <p class="flappyLink">Flappy Bird</p>
+             <p class="flappyLink linkColor">Flappy Bird</p>
             <img src="./images/circledot.svg" class="dot"/>
-             <p class="ticTacLink">Tic-Tac-Toe</p>
+             <p class="ticTacLink linkColor">Tic-Tac-Toe</p>
             <img src="./images/circledot.svg" class="dot"/>
-             <p class="typingLink">Speed Typing</p>
+             <p class="typingLink linkColor">Speed Typing</p>
             <img src="./images/circledot.svg" class="dot"/>
-             <p class="bankistLink">Bankist app</p>
+             <p class="bankistLink linkColor">Bankist app</p>
             <img src="./images/circledot.svg" class="dot"/>
-             <p class="bankistWebLink">Bankist Webpage</p>
+             <p class="bankistWebLink linkColor">Bankist Webpage</p>
             <img src="./images/circledot.svg" class="dot"/>
-             <p class="forkifyLink">Forkify</p>
+             <p class="forkifyLink linkColor">Forkify</p>
             <img src="./images/circledot.svg" class="dot"/>
-             <p class="maptyLink">Mapty</p>
+             <p class="maptyLink linkColor">Mapty</p>
             <button type="button" class = "website-link">
               <a class = "webLink" href= "">More Info</a>
             </button>
@@ -96,13 +97,13 @@
       </div>
     </div>
     <footer>
-      <div class="refrences">
+      <div class="refrences" id="links">
         <a
           href="https://za.linkedin.com/in/clintin-herholdt-aa48b611b"
           target="_blank"
           title="Linkedin"
           class="refrences-item"
-          data-tooltip="visit my Linkedin"
+          data-tooltip="Visit my Linkedin"
         >
           <i class="linkedin-svg"></i>
         </a>
@@ -111,7 +112,7 @@
           target="_blank"
           title="My Github"
           class="refrences-item"
-          data-tooltip="visit my Github"
+          data-tooltip="Visit my Github"
         >
           <i class="github-svg"></i>
         </a>
@@ -120,7 +121,7 @@
           target="_blank"
           title="GitKragen Repo Manager"
           class="refrences-item"
-          data-tooltip="info on Gitkraken"
+          data-tooltip="Gitkraken"
         >
           <i class="gitkraken-svg"></i>
         </a>
@@ -129,7 +130,7 @@
           target="_blank"
           title="Html vs Html 5"
           class="refrences-item"
-          data-tooltip="info on HTML"
+          data-tooltip="HTML5"
         >
           <i class="html5-svg"></i>
         </a>
@@ -138,7 +139,7 @@
           target="_blank"
           title="CSS vs CSS 3"
           class="refrences-item"
-          data-tooltip="info on CSS"
+          data-tooltip="CSS3"
         >
           <i class="css3-svg"></i>
         </a>
