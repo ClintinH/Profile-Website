@@ -7,6 +7,11 @@
   margin: 0;
 }
 
+header {
+  width: 100%;
+  min-height: 16rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,9 +37,9 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.5em 0.5em;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.39rem;
 }
 
 .nav-link::after {
@@ -49,14 +54,16 @@ li a {
 }
 
 ul {
+  margin-right: 1rem;
   float: right;
   list-style-type: none;
 }
 
 .logo {
-  margin-left: 27px;
-  margin-top: 27px;
-  height: 150px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.7em;
+  height: 9.37rem;
 }
 
 .flexbox-container {
@@ -67,99 +74,82 @@ ul {
 }
 
 .flexbox-container-top {
-  width: 100%;
+  margin: 0 auto;
+  width: 23em;
 }
 .introduction-panel {
   width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.welcome-text {
-  width: 55%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.subheading-text {
-  cursor: default;
-  font-size: 53px;
-  color: white;
 }
 
 .myskills {
-  width: 55%;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  min-width: 21.5em;
+  padding-left: 1rem;
+  margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
 }
 
 .flexbox-container-middle {
   width: 100%;
-  margin-top: 40px;
 }
 
 .about-heading {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: -3rem;
+  margin-right: -3.5rem;
 }
 
 .about-me-text {
+  display: block;
+  min-width: 23.125rem;
   cursor: default;
   color: white;
-  font-size: 40px;
+  padding: 1rem;
+  font-size: 1.3rem;
   font-style: italic;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 0.2rem;
 }
 
 .skill-level-text {
+  min-width: 23.125rem;
   cursor: default;
   color: #7ac087;
-  font-size: 40px;
+  font-size: 1.3rem;
   font-style: italic;
   text-align: center;
-  margin-top: 25px;
 }
 
 .project-heading {
-  width: 90%;
-  margin-left: auto;
+  min-width: 29.37rem;
+  margin-left: -3rem;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 2rem;
 }
 
 .flexbox-container-bottom {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-top: 25px;
-  margin-bottom: 130px;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  column-count: 2;
+  margin: 0 auto;
 }
 
 .flexbox-iframe-left {
-  height: 540px;
-  width: 880px;
-  margin-left: 30px;
+  /* min-height: ; */
+  min-width: 21.87rem;
   background-color: black;
-  border: 2px solid black;
+  border: 0.125rem solid black;
   flex-grow: 2;
 }
 
 #srcFrame {
-  height: 94%;
+  margin-left: 0.3rem;
+  margin-top: 0.15rem;
+  height: 97%;
   width: 97%;
-  margin: 15px;
   border-color: black;
 }
 
 .flexbox-projectHeadings-right {
-  height: 520px;
-  margin-left: 30px;
+  margin: 1rem 0;
   align-items: center;
   flex-grow: 1;
 }
@@ -172,15 +162,16 @@ ul {
 
 .dot {
   float: left;
-  margin-top: 15px;
+  margin-bottom: 6px;
   margin-right: 10px;
   width: 20px;
 }
 
 p {
+  margin-bottom: 5px;
   cursor: pointer;
   color: white;
-  font-size: 40px;
+  font-size: 1.2rem;
   font-style: italic;
   text-align: left;
 }
@@ -201,10 +192,9 @@ button:hover {
 }
 
 footer {
-  position: fixed;
   bottom: 0%;
   border-top: 1.5px solid #313646;
-  margin: auto;
+  margin: 0 auto;
   width: 100%;
   background-color: #000028 !important;
 }
@@ -226,8 +216,8 @@ a:active {
 }
 
 .refrences {
-  margin: auto;
-  width: 36%;
+  margin-left: 1.6rem;
+
   padding: 5px;
 }
 
@@ -239,7 +229,7 @@ a.refrences-item {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   margin: 5px;
-  line-height: 16px;
+  line-height: 1rem;
   padding: 10px;
   border-radius: 50%;
   background-color: #141421;
@@ -254,7 +244,7 @@ a.refrences-item {
   display: inline-block;
   font-weight: normal;
   line-height: 1;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   vertical-align: top;
   font-feature-settings: normal;
@@ -392,25 +382,32 @@ h2 .bounce {
   transition: all 0.3s ease-out;
 }
 
+.welcome-text {
+  width: 100%;
+  padding-left: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subheading-text {
+  cursor: default;
+  font-size: 1.35rem;
+  color: white;
+}
+
 #hi-text:hover,
 #myName-text:hover {
   color: #ff4500;
 }
 
-h2 {
-  position: relative;
-  left: -10px;
-  line-height: 6.7rem;
-}
-
 #hi-text {
-  font-size: 80px;
+  font-size: 2rem;
   color: #99d4db;
   font-style: italic;
 }
 
 #myName-text {
-  font-size: 155px;
+  font-size: 3rem;
   color: #99d4db;
   font-style: italic;
 }
@@ -506,4 +503,180 @@ h2 {
 .bubble {
   -webkit-animation-name: bubble;
   animation-name: bubble;
+}
+
+/* @media max-width(23em) {
+  .refrences:has(a) {
+    display: inline-block;
+    width: max();
+  }
+} */
+
+@media (min-width: 600px) {
+  header {
+    width: 100%;
+    min-height: 12rem;
+  }
+
+  .logo {
+    float: left;
+    margin-left: 1.7rem;
+    margin-top: 1.7rem;
+  }
+
+  li a {
+    float: right;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .flexbox-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexbox-container-top {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .introduction-panel {
+    width: 56%;
+    margin: 0 auto;
+  }
+
+  .welcome-text {
+    margin-top: 5rem;
+  }
+
+  #hi-text {
+    font-size: 5rem;
+  }
+
+  #myName-text {
+    font-size: 9.6rem;
+  }
+
+  h2 {
+    /* min-width: 53rem; */
+    position: relative;
+    left: -10px;
+    line-height: 6.7rem;
+  }
+
+  .subheading-text {
+    font-size: 3.51rem;
+  }
+
+  .myskills {
+    min-width: 60%;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+
+  .flexbox-container-middle {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .about-heading {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-me-text {
+    cursor: default;
+    color: white;
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .skill-level-text {
+    cursor: default;
+    color: #7ac087;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .project-heading {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  .flexbox-container-bottom {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 130px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .flexbox-iframe-left {
+    height: 540px;
+    width: 880px;
+    margin-left: 30px;
+    background-color: black;
+    border: 2px solid black;
+    flex-grow: 2;
+  }
+
+  #srcFrame {
+    height: 94%;
+    width: 97%;
+    margin: 15px;
+    border-color: black;
+  }
+
+  .flexbox-projectHeadings-right {
+    height: 520px;
+    margin-left: 30px;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .linkColor:hover {
+    color: #08fdd8;
+    font-style: bold;
+    text-decoration: underline;
+  }
+
+  .dot {
+    float: left;
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 20px;
+  }
+
+  p {
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    text-align: left;
+  }
+
+  .refrences {
+    margin-left: 30%;
+    padding: 5px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0%;
+    border-top: 1.5px solid #313646;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #000028 !important;
+  }
 }
