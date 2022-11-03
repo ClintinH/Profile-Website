@@ -1,3 +1,5 @@
+import { init } from "./slider.js";
+
 const srcFrame = document.querySelector("#srcFrame");
 const projectLinks = document.querySelector(".flexbox-projectHeadings-right");
 const header = document.querySelector(".bounce-label");
@@ -28,6 +30,15 @@ siteInfo.set("dinoLink", {
 siteInfo.set("flappyLink", {
   link: "https://flappy-bird-flaps.netlify.app",
 });
+siteInfo.set("guessNumberLink", {
+  link: "https://clintin-guess-mynumber.netlify.app",
+});
+siteInfo.set("calculatorLink", {
+  link: "https://clintin-calculator.netlify.app/",
+});
+siteInfo.set("pigGameLink", {
+  link: "https://clintin-piggame.netlify.app",
+});
 
 projectLinks.addEventListener("click", function (e) {
   const element = e.target.closest("p");
@@ -48,3 +59,5 @@ header.addEventListener("mouseover", (e) => {
     }, 1000);
   }
 });
+
+init();
