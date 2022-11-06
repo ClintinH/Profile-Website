@@ -88,6 +88,7 @@ const dotContainers = function () {
 
 const init = function () {
   maxSlides = slides.length - 1;
+  curSlide = 0;
   dotContainers();
   createDot();
   activeDot(0);
