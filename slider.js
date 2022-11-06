@@ -13,6 +13,7 @@ export const slideInnerHtml = function (slideHtml) {
 
 const createDot = function () {
   const dotContainer = document.querySelector(".dots");
+  dotContainer.innerHTML = "";
 
   slides.forEach(function (_, i) {
     dotContainer.insertAdjacentHTML(

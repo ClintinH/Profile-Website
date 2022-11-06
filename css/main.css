@@ -588,7 +588,8 @@ h2 .bounce {
 
 /* GAME INFORMATION BLOCK */
 .information-block {
-  width: 78%;
+  top: -7%;
+  width: 91%;
   position: relative;
 }
 
@@ -604,6 +605,13 @@ h2 .bounce {
   font-size: 1.7rem;
   margin-bottom: 3.5rem;
   color: #b9b9b9;
+}
+
+.disclaimer {
+  width: 35rem;
+  margin: 0 auto;
+  color: #b9b9b9;
+  font-style: italic;
 }
 
 .linkstyle {

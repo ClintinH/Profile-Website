@@ -30,7 +30,7 @@ siteInfo.set("ticTacLink", {
               <li class="linkstyle">1. Tic-Tak-Toe is a game with 2 players.<br />
               Player 1 with a symbol 'X' & Player2 with a symbol 'O'.</li>
               <li class="linkstyle">2. The first player to get 3 of their symbols in a row wins.</li>
-              <li v>3. A Row combination can be horizontal, vertical or diagonally.</li>
+              <li class="linkstyle">3. A Row combination can be horizontal, vertical or diagonally.</li>
               <li class="linkstyle">4. A draw is when there is no players with a winning comination (3 symbols in a row) and all the spaces are filled with symbols.</li>
             </ul>
                       
@@ -66,11 +66,10 @@ siteInfo.set("typingLink", {
         <h5 class="information__header">How to Play!</h5>
             <ul class="information__text">
               <li class="linkstyle">1. Type the sentence that appears as fast as you can before the timer runs out.</li>
-              <li class="linkstyle">2. If you type correctly the words will change color to green.</li>
-              <li class="linkstyle">3. If you type incorrectly the words will change color to red.</li>
+              <li class="linkstyle">2. The displayed sentence character will change color to green if you type correctly.</li>
+              <li class="linkstyle">3. The displayed sentence character will change color to red if you type incorrectly.</li>
               <li class="linkstyle">4. A new line of text will appear if you finished the sentence correctly or if the timer runs out.</li>
-            </ul>
-                      
+            </ul>                      
         </div>
     </div>
 
@@ -78,17 +77,10 @@ siteInfo.set("typingLink", {
       <div class="information-block">
         <h5 class="information__header">Challenges I had whilst design / coding</h5>
           <ul class="information__text">
-              <li class="linkstyle">1. Write a function to prevent players from typing more letters than in the sentence.</li>
-              <li class="linkstyle">2. Writing a function to let the player know whether the letter typed is correct or incorrect</li>
-              <li class="linkstyle">2. Writing a function to give a player just enough time to complete the challenge</li>
+              <li class="linkstyle">1. Whilts testing I noticed that I can type more characters than which was required. The first challenge was how to prevent players from typing more letters than the displayed sentence.</li>
+              <li class="linkstyle">2. I needed a way to inform users whether they are typing correctly or incorrectly. The second challenge was to write a function that informs a player whether the letter typed is correct or incorrect. correct - green | incorrect - red</li>
+              <li class="linkstyle">3. Whilst testing I realised that I had too much time to write the sentences. This preventing a urge for urgency and lowered the difficulty of the game. The third challenge was to writing a function to give a player just enough time to complete the challenge</li>
           </ul>            
-      </div>
-    </div>
-
-    <div class="slide slide--3">
-      <div class="information-block">
-        <h5 class="information__header">Planning</h5>
-        <img src="images/tiktaktoPlanning.svg" alt="" class="planning-image" />        
       </div>
     </div>
   `,
@@ -102,10 +94,10 @@ siteInfo.set("bankistLink", {
       <div class="information-block">
         <h5 class="information__header">How to Play!</h5>
             <ul class="information__text">
-              <li class="linkstyle">1. 2 user accounts  js - 1111, jd - 2222.</li>
-              <li class="linkstyle">2. Can send funds, make withdrawals, loan money, check balances and more.</li>
-              <li class="linkstyle">3. You can sort your movement on the account.</li>
-              <li class="linkstyle">4. Accounts log out automatically after user is idle for a set amount of time</li></li>
+              <li class="linkstyle">1. There is only 2 user accounts for now: username: js, password: 1111, username: jd, password: 2222.</li>
+              <li class="linkstyle">2. You can send funds, make withdrawals, loan money, check balances.</li>
+              <li class="linkstyle">3. You can sort your movement on the account. Only newest to oldest or oldest to newest</li>
+              <li class="linkstyle">4. The user accounts log out automatically after user is idle for a set amount of time</li></li>
             </ul>
             ${disclaimer}            
         </div>
@@ -115,9 +107,9 @@ siteInfo.set("bankistLink", {
       <div class="information-block">
         <h5 class="information__header">Challenges I had whilst design / coding</h5>
           <ul class="information__text">
-              <li class="linkstyle">1. Writing a function with logic to work out the interest rate of loan amount.</li>
-              <li class="linkstyle">2. Writing a function to check whether user meats the requirements to make loans</li>
-              <li class="linkstyle">2. Writing a function to transer amounts and add / subtract amounts from accounst</li>
+              <li class="linkstyle">1. I didn't know how to to work out the interest on loans, research.research.research. First challenge writing a function with logic to work out the interest rate of loan amount.</li>
+              <li class="linkstyle">2. I needed a method to see whether the user are qualified to loan any money or not. Second challenge writing a function to check whether user meets the requirements to make loans</li>
+              <li class="linkstyle">2. I wanted the users to beable to transfer funds to other like a real bank. Third challenge writing a function to transer amounts to others and add funds to transfered user and subtract funds from accounst that did the transfer</li>
           </ul>            
       </div>
     </div>
@@ -132,8 +124,8 @@ siteInfo.set("bankistWebLink", {
       <div class="information-block">
         <h5 class="information__header">How to Play!</h5>
             <ul class="information__text">
-              <li class="linkstyle">1. Marketing website for Bankist app.</li>
-              <li class="linkstyle">2. Show casing what the benefits are of using the bankist app.</li>
+              <li class="linkstyle">1. This is a website build for marketing of the bankist app.</li>
+              <li class="linkstyle">2. Show casing what the benefits are of using the bankist app ...</li>
             </ul>
             ${disclaimer}             
         </div>
@@ -143,8 +135,9 @@ siteInfo.set("bankistWebLink", {
       <div class="information-block">
         <h5 class="information__header">Challenges I had whilst design / coding</h5>
           <ul class="information__text">
-            <li class="linkstyle">1. Writing a scroll method to check percentages of window view before loading next content.</li>
-            <li class="linkstyle">2. Writing an loading the testimonials gallery.</li>
+            <li class="linkstyle">1. Challenging myself to creating lazy loading images and content for better performance. First challenge writing a scroll method to check percentages of window view before loading next content.</li>
+            <li class="linkstyle">2. Trying to make the website as appealing and approachable as possible. Second challenge how to create a website people will actually see as an authentic banking website</li>
+            <li class="linkstyle">3. We had to create a slider with testemonial for authentisy of the user experiences. As I have never created a slider before it was back to research. third challenge creating a slider.</li>
           </ul>            
       </div>
     </div>
@@ -159,9 +152,10 @@ siteInfo.set("forkifyLink", {
       <div class="information-block">
         <h5 class="information__header">How to Play!</h5>
             <ul class="information__text">
-              <li class="linkstyle">1. Marketing website viewing recipes of food.</li>
-              <li class="linkstyle">2. Can load your own recipes that you like.</li>
-              <li class="linkstyle">3. Bookmark function for easy access to you favorite recipes.</li>
+              <li class="linkstyle">1. A recipe website for viewing recipes of food of all different kinds. Yum!</li>
+              <li class="linkstyle">2. You can search or load your own recipes that you like.</li>
+              <li class="linkstyle">3. If you find a reciper you like you can bookmark it for easy access to you favorite recipes.</li>
+              <li class="linkstyle">4. Every recipe has a foto to view what the final product should look like and has an option to increase the number of servings which then increases the amount of incredient you need for completion.</li>
             </ul>
             ${disclaimer}            
         </div>
@@ -171,9 +165,9 @@ siteInfo.set("forkifyLink", {
       <div class="information-block">
         <h5 class="information__header">Challenges I had whilst design / coding</h5>
           <ul class="information__text">
-            <li class="linkstyle">1. Writing the pagination method to load the recipes and correspond the right amount of pages to scroll throught.</li>
-            <li class="linkstyle">2. Getting the ingredients to multiply correctly according to the amount of servings.</li>
-            <li class="linkstyle">2. Writing a function to store data in the local API so that the information will load automatically every time a user uses the website (example bookmarks).</li>
+            <li class="linkstyle">1. My first challenge was to write the pagination method to load the recipes and correspond the right amount of pages to scroll throught so that we can load more recipes without have to make the information too small.</li>
+            <li class="linkstyle">2. My second challenge was getting the ingredients to multiply correctly according to the amount of servings.</li>
+            <li class="linkstyle">3. I wanted to store the bookmarked recipes and users loaded recipes so that they can access this features when the visit the webpage again which means storing this information on the local storage. Third challenge was to writing a function to store data in the local API so that the information will load automatically every time a user uses the website (example bookmarks).</li>
           </ul>            
       </div>
     </div>
@@ -188,12 +182,12 @@ siteInfo.set("maptyLink", {
       <div class="information-block">
         <h5 class="information__header">How to Play!</h5>
             <ul class="information__text">
-              <li class="linkstyle">1. Create a workout plan of either running or cycling.</li>
-              <li class="linkstyle">2. You can adjust the pace/tempo/time of a route as you would like.</li>
+              <li class="linkstyle">1. You can create a workout plan for either running or cycling or both.</li>
+              <li class="linkstyle">2. You can adjust the pace/tempo/time of any route as you would like.</li>
               <li class="linkstyle">3. Plot markers on the geomap to mark your favorite workouts locations.</li>
-              <li class="linkstyle">4. Color coded in orange or green to help differentiate between running / cycling.</li>
-              <li class="linkstyle">5. You can set you workouts anywork in the word.</li>
-              <li class="linkstyle">6. The app will zero in on your location when you open the app</li>
+              <li class="linkstyle">4. Color coded in orange or green to help differentiate between running or cycling.</li>
+              <li class="linkstyle">5. You can set your workouts from any location in the word.</li>
+              <li class="linkstyle">6. The app will zero in on your location when you open the app for easy use</li>
             </ul>
             ${disclaimer}            
         </div>
@@ -203,8 +197,8 @@ siteInfo.set("maptyLink", {
       <div class="information-block">
         <h5 class="information__header">Challenges I had whilst design / coding</h5>
           <ul class="information__text">
-            <li class="linkstyle">1. Getting the location markets to plot on the geomap with information set by the user.</li>
-            <li class="linkstyle">2. Storing the user workout information on a local API so that the information will load whenever the user uses the application.</li>
+            <li class="linkstyle">1. I wanted the user to pin location on the map to set their routes for their exercise plans. First challenge getting the location markers to plot on the geomap with information that the user can set (running, cycling, pace, tempo, time).</li>
+            <li class="linkstyle">2. I wanted the markers placed by the users to stay there when they use the app again. Second challenge storing the user workout information on a local API so that the information will load whenever the user uses the application.</li>
           </ul>            
       </div>
     </div>
@@ -219,9 +213,9 @@ siteInfo.set("dinoLink", {
       <div class="information-block">
         <h5 class="information__header">How to Play!</h5>
             <ul class="information__text">
-              <li class="linkstyle">1. Press a key to start game</li>
-              <li class="linkstyle">2. Press space bar to make the Dinosaur Character jump</li>
-              <li class="linkstyle">3. Jump Over as Many Cactus obstacles as you can you get the highest score</li>
+              <li class="linkstyle">1. Press any key to start game</li>
+              <li class="linkstyle">2. Press space bar to make the dinosaur character jump</li>
+              <li class="linkstyle">3. Jump over as many cactus obstacles as you can to get the highest score</li>
             </ul>
                       
         </div>
@@ -231,8 +225,19 @@ siteInfo.set("dinoLink", {
       <div class="information-block">
         <h5 class="information__header">Challenges I had whilst design / coding</h5>
           <ul class="information__text">
-            <li class="linkstyle">1. Getting the backgrounds to move at different speeds to create look and feel</li>
-            <li class="linkstyle">2. Adjusting the right values for the gravity and speed so that the Dino character can jump over the cactus obstacles</li>
+            <li class="linkstyle">1. I wanted the background to move and different speeds so that the user will get the feeling that the dino character is running in the desert. First challenge getting the backgrounds to move at different speeds to create look and feel</li>
+            <li class="linkstyle">2. I need to create a way to make the dino character move smoothly when the user jumps. Second challenge adjusting the right values for the gravity and speed so that the dino character can jump over the cactus obstacles with smooth movements</li>
+            to be Continued on the next page            
+          </ul>            
+      </div>
+    </div>
+
+    <div class="slide slide--2">
+      <div class="information-block">
+        <h5 class="information__header">Challenges I had whilst design / coding</h5>
+          <ul class="information__text">            
+            <li class="linkstyle">3. When I was testing the game I realised that some of the images wasn't loading properly. Third challenge creating a loading bar so that all the information on the webpage can load before the user starts playing</li>
+            <li class="linkstyle">4. My mentor challenged me to make the game responsive on other platforms as well. Fourth challenge adding methods and css styling so that the game will be playable on other platforms, example cellphones.</li>
           </ul>            
       </div>
     </div>
@@ -240,7 +245,7 @@ siteInfo.set("dinoLink", {
     <div class="slide slide--3">
       <div class="information-block">
         <h5 class="information__header">Planning</h5>
-        <img src="images/tiktaktoPlanning.svg" alt="" class="planning-image" />        
+        <img src="images/dinogamePlanning.svg" alt="" class="planning-image" />        
       </div>
     </div>
   `,
@@ -254,9 +259,9 @@ siteInfo.set("flappyLink", {
       <div class="information-block">
         <h5 class="information__header">How to Play!</h5>
             <ul class="information__text">
-              <li class="linkstyle">1. Press a key to start game</li>
-              <li class="linkstyle">2. Press space bar to make the bird fly up and release space bar to make the bird glyde down</li>
-              <li class="linkstyle">3. Move through as many pillars as possible to reach the furthers and fly the longest</li>
+              <li class="linkstyle">1. Press any key to start game</li>
+              <li class="linkstyle">2. Press space bar repeatedly to make the bird fly up and release the space bar to make the bird glyde downwards</li>
+              <li class="linkstyle">3. Move through as many pillars as possible to see who can fly the longest</li>
             </ul>
                       
         </div>
@@ -266,9 +271,20 @@ siteInfo.set("flappyLink", {
       <div class="information-block">
         <h5 class="information__header">Challenges I had whilst design / coding</h5>
           <ul class="information__text">
-            <li class="linkstyle">1. Creating a method to create the gaps in the pillars</li>
-            <li class="linkstyle">2. Adjusting the pillar gap just big enough for the bird to fly through</li>
-            <li class="linkstyle">2. getting the values of the gravity to be just the right amount so that the bird as fluent motions</li>
+            <li class="linkstyle">1. The First challenge was to creating a method to create the gaps in the pillars for the bird to fly through.</li>
+            <li class="linkstyle">2. When testing the game I realised that the gaps of the pillars was a little small and the bird could not fly through. Second challenge adjusting the pillar gap just big enough for the bird to fly through.</li>
+            <li class="linkstyle">3. I was struggling to get the bird to move fluently and not to make it fall downwards to fast and upwards to slow. This decreased the user experience. Third challenge was to get the values of the gravity to be just the right amount so that the bird fly as fluent as possible.</li>
+            to be Continued on the next page
+          </ul>            
+      </div>
+    </div>
+
+    <div class="slide slide--2">
+      <div class="information-block">
+        <h5 class="information__header">Challenges I had whilst design / coding</h5>
+          <ul class="information__text">                        
+            <li class="linkstyle">4. When I was testing the game I realised that some of the images wasn't loading properly. Third challenge creating a loading bar so that all the information on the webpage can load before the user starts playing</li>
+            <li class="linkstyle">5. My mentor challenged me to make the game responsive on other platforms as well. Fourth challenge adding methods and css styling so that the game will be playable on other platforms, example cellphones.</li>
           </ul>            
       </div>
     </div>
@@ -290,30 +306,12 @@ siteInfo.set("guessNumberLink", {
       <div class="information-block">
         <h5 class="information__header">How to Play!</h5>
             <ul class="information__text">
-              <li class="linkstyle">1. Tic-Tak-Toe is a game with 2 players. Player 1 with a symbol 'X' & Player2 with a symbol 'O'.</li>
-              <li class="linkstyle">2. The first player to get 3 of their symbols in a row wins.</li>
-              <li class="linkstyle">3. A Row combination can be horizontal, vertical or diagonally.</li>
-              <li class="linkstyle">4. A draw is when there is no players with a winning comination (3 symbols in a row) and all the spaces are filled with symbols.</li>
+              <li class="linkstyle">1. Type in a number as a guess to what the mysterious number behind the question mark could be.</li>
+              <li class="linkstyle">2. The mysterious number will be a random number ranging from 1 to 20.</li>
+              <li class="linkstyle">3. Once you have submitted your guess the message will prompt whether your guess is correct, too low or too high.</li>
             </ul>
-                      
+            ${disclaimer}            
         </div>
-    </div>
-
-    <div class="slide slide--2">
-      <div class="information-block">
-        <h5 class="information__header">Challenges I had whilst design / coding</h5>
-          <ul class="information__text">
-              <li class="linkstyle">1. Write a function to prevent players from adding symbols on top of each other.</li>
-              <li class="linkstyle">2. Writing logic to recognize a winning combination and if no combination exist then its a draw.</li>
-          </ul>            
-      </div>
-    </div>
-
-    <div class="slide slide--3">
-      <div class="information-block">
-        <h5 class="information__header">Planning</h5>
-        <img src="images/tiktaktoPlanning.svg" alt="" class="planning-image" />        
-      </div>
     </div>
   `,
   weblink: "https://clintin-guess-mynumber.netlify.app",
@@ -326,10 +324,9 @@ siteInfo.set("calculatorLink", {
       <div class="information-block">
         <h5 class="information__header">How to Play!</h5>
             <ul class="information__text">
-              <li class="linkstyle">1. Tic-Tak-Toe is a game with 2 players. Player 1 with a symbol 'X' & Player2 with a symbol 'O'.</li>
-              <li class="linkstyle">2. The first player to get 3 of their symbols in a row wins.</li>
-              <li class="linkstyle">3. A Row combination can be horizontal, vertical or diagonally.</li>
-              <li class="linkstyle">4. A draw is when there is no players with a winning comination (3 symbols in a row) and all the spaces are filled with symbols.</li>
+              <li class="linkstyle">1. Add, subtract, multiply and divide like a normal house hold calculator.</li>
+              <li class="linkstyle">2. You can reset the total amount of operations or just the current operation.</li>
+              <li class="linkstyle">3. You must press the equal button to finalize you operation before a next operation can begin.</li>
             </ul>
                       
         </div>
@@ -339,17 +336,11 @@ siteInfo.set("calculatorLink", {
       <div class="information-block">
         <h5 class="information__header">Challenges I had whilst design / coding</h5>
           <ul class="information__text">
-              <li class="linkstyle">1. Write a function to prevent players from adding symbols on top of each other.</li>
-              <li class="linkstyle">2. Writing logic to recognize a winning combination and if no combination exist then its a draw.</li>
+              <li class="linkstyle">1. My first challenge was to write a method to know on which button the user click so that the corresponding action could be taken on the application</li>
+              <li class="linkstyle">2. My second challenge was to write a function to select whether the user Added, subtracted, multiplied or divided so that the correct calculation could be displayed on the calculator screen</li>
           </ul>            
       </div>
     </div>
-
-    <div class="slide slide--3">
-      <div class="information-block">
-        <h5 class="information__header">Planning</h5>
-        <img src="images/tiktaktoPlanning.svg" alt="" class="planning-image" />        
-      </div>
     </div>
   `,
   weblink: "https://clintin-calculator.netlify.app/",
@@ -362,30 +353,13 @@ siteInfo.set("pigGameLink", {
       <div class="information-block">
         <h5 class="information__header">How to Play!</h5>
             <ul class="information__text">
-              <li class="linkstyle">1. Tic-Tak-Toe is a game with 2 players. Player 1 with a symbol 'X' & Player2 with a symbol 'O'.</li>
-              <li class="linkstyle">2. The first player to get 3 of their symbols in a row wins.</li>
-              <li class="linkstyle">3. A Row combination can be horizontal, vertical or diagonally.</li>
-              <li class="linkstyle">4. A draw is when there is no players with a winning comination (3 symbols in a row) and all the spaces are filled with symbols.</li>
+              <li class="linkstyle">1. Each player will be given a change to roll the dice when can land from number 1 to 6.</li>
+              <li class="linkstyle">2. Everytime the dice stops the corresponding number it landed on will be added to the players current total.</li>
+              <li class="linkstyle">3. A players has to press the hold button to add the current total to their total score. If the player rolls a 1 on the dice then their current total will be reset to an amount of 0.</li>
+              <li class="linkstyle">4. The player with the first total score to reach 100 wins</li>
             </ul>
                       
         </div>
-    </div>
-
-    <div class="slide slide--2">
-      <div class="information-block">
-        <h5 class="information__header">Challenges I had whilst design / coding</h5>
-          <ul class="information__text">
-              <li class="linkstyle">1. Write a function to prevent players from adding symbols on top of each other.</li>
-              <li class="linkstyle">2. Writing logic to recognize a winning combination and if no combination exist then its a draw.</li>
-          </ul>            
-      </div>
-    </div>
-
-    <div class="slide slide--3">
-      <div class="information-block">
-        <h5 class="information__header">Planning</h5>
-        <img src="images/tiktaktoPlanning.svg" alt="" class="planning-image" />        
-      </div>
     </div>
   `,
   weblink: "https://clintin-piggame.netlify.app",
