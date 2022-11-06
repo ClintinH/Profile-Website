@@ -1,13 +1,19 @@
 // Information slider
-const slides = document.querySelectorAll(".slide");
 const btnLeft = document.querySelector(".slider__btn--left");
 const btnRight = document.querySelector(".slider__btn--right");
-const dotContainer = document.querySelector(".dots");
 
+let slides;
 let curSlide = 0;
-const maxSlides = slides.length - 1;
+let maxSlides;
+
+export const slideInnerHtml = function (slideHtml) {
+  slides = slideHtml;
+  init();
+};
 
 const createDot = function () {
+  const dotContainer = document.querySelector(".dots");
+
   slides.forEach(function (_, i) {
     dotContainer.insertAdjacentHTML(
       "beforeend",
@@ -26,7 +32,7 @@ const activeDot = function (slide) {
     .classList.add("dots__dot--active");
 };
 
-// 0%, 100%, 200%, 300%
+// Settin Up slides - 0%, 100%, 200%, 300%
 
 const goToSlide = function (slide) {
   slides.forEach(
@@ -67,15 +73,21 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowRight") nextSlide();
 });
 
-dotContainer.addEventListener("click", function (e) {
-  if (e.target.classList.contains("dots__dot")) {
-    const { slide } = e.target.dataset;
-    goToSlide(slide);
-    activeDot(slide);
-  }
-});
+const dotContainers = function () {
+  const dotContainer = document.querySelector(".dots");
 
-export const init = function () {
+  dotContainer.addEventListener("click", function (e) {
+    if (e.target.classList.contains("dots__dot")) {
+      const { slide } = e.target.dataset;
+      goToSlide(slide);
+      activeDot(slide);
+    }
+  });
+};
+
+const init = function () {
+  maxSlides = slides.length - 1;
+  dotContainers();
   createDot();
   activeDot(0);
   goToSlide(0);

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UAnav-link-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Journey into JavaScript</title>
     <link rel="stylesheet" href="./css/main.css" />
@@ -15,7 +15,7 @@
       <img class="logo" src="./images/logo.svg" />
       <ul>
         <li><a href="https://docs.google.com/uc?export=download&id=1f4IVyNHauKLM1Kh1D74yentBL6dbviP6">Resume</a></li>
-        <li><a class="nav-link" href="https://docs.google.com/uc?export=download&id=1szru3x8U_QjvsrMBXcUQRGl__7LF98XQ">Certificates</a></li>
+        <li><a class="" href="https://docs.google.com/uc?export=download&id=1szru3x8U_QjvsrMBXcUQRGl__7LF98XQ">Certificates</a></li>
         <li><a class="nav-link" href="#projects">Projects</a></li>
         <li><a class="nav-link" href="#about">About</a></li>
         <li><a class="nav-link" href="#home">Home</a></li>
@@ -53,12 +53,10 @@
         <div class="about-heading" id="about"><img src="./images/aboutheading.svg" /></div>
           <p class="about-me-text">
             My Journey started with a glimpse of a web application I saw my<br />
-            friend was working on. It immediatly sparked my interest and set me<br />
-            on a path learning and adventures of an exciting future of
-            possibilities.<br />
-            It was in this process that I discovered a wonderful JavaScript
-            course<br />
-            basic to expert course on Udemy and many many moons and<br />
+            friend who is now my mentor was working on. It immediatly sparked my <br />
+            interest and set me on a path learning and adventures of an exciting future of<br />
+            possibilities. It was in this process that I discovered a wonderful JavaScript<br />
+            course basic to expert course on Udemy and many many moons and<br />
             struggles later I finished the course.<br />
           </p>
           <p class="skill-level-text">
@@ -73,6 +71,28 @@
         <div class="flexbox-iframe-left">
            <iframe id="srcFrame"></iframe>
         </div>
+
+        <!-- <button class="button open-modal">open</button> -->
+        <dialog class="modal" id="modal">
+          <section class="section">
+         
+            <div class="slider">           
+ 
+            </div>
+              <button class="slider__btn slider__btn--left">&larr;</button>
+              <button class="slider__btn slider__btn--right">&rarr;</button>
+            <div class="dots"></div>
+
+            <button type="button" class = "website-link">
+              <a class = "webLink" href= "">GO TO WEB PAGE</a>
+              </button>
+              <button type="button" class = "code-link">
+              <a class = "codeLink" href= "">GO TO CODE</a>
+              </button>  
+          </section>
+          <button class="button close-modal">X</button>
+        </dialog>
+
         <div class="flexbox-projectHeadings-right">
             <img src="./images/circledot.svg" class="dot"/>
              <p class="dinoLink linkColor" >Dino Game</p>
@@ -80,8 +100,14 @@
              <p class="flappyLink linkColor">Flappy Bird</p>
             <img src="./images/circledot.svg" class="dot"/>
              <p class="ticTacLink linkColor">Tic-Tac-Toe</p>
-            <img src="./images/circledot.svg" class="dot"/>
+            <img src="./images/circledot.svg" class="dot"/>            
+             <p class="pigGameLink linkColor">Pig Game</p>  
+             <img src="./images/circledot.svg" class="dot"/>
+             <p class="guessNumberLink linkColor">Guess My Number</p>
+             <img src="./images/circledot.svg" class="dot"/>
              <p class="typingLink linkColor">Speed Typing</p>
+             <img src="./images/circledot.svg" class="dot"/>
+             <p class="calculatorLink linkColor">Calculator</p>  
             <img src="./images/circledot.svg" class="dot"/>
              <p class="bankistLink linkColor">Bankist app</p>
             <img src="./images/circledot.svg" class="dot"/>
@@ -89,36 +115,10 @@
             <img src="./images/circledot.svg" class="dot"/>
              <p class="forkifyLink linkColor">Forkify</p>
             <img src="./images/circledot.svg" class="dot"/>
-             <p class="maptyLink linkColor">Mapty</p>
-             <img src="./images/circledot.svg" class="dot"/>
-             <p class="guessNumberLink linkColor">Guess My Number</p>
-             <img src="./images/circledot.svg" class="dot"/>
-             <p class="calculatorLink linkColor">Calculator</p>    
-             <img src="./images/circledot.svg" class="dot"/>
-             <p class="pigGameLink linkColor">Pig Game</p>   
-             
+             <p class="maptyLink linkColor">Mapty</p>   
         </div>        
     </div>
-
-
-      <div class="slider">
-        <div class="slide slide--1">
-          <div class="info info-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quas quaerat ipsa in veniam modi delectus, repellat, soluta distinctio dolorum quidem minus ut repellendus incidunt dolores, cum rem. Est, facilis.</div>
-        </div>
-
-        <div class="slide slide--2">
-          <div class="info info-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quas quaerat ipsa in veniam modi delectus, repellat, soluta distinctio dolorum quidem minus ut repellendus incidunt dolores, cum rem. Est, facilis.</div>
-        </div>
-
-        <div class="slide slide--3">
-          <div class="info info-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quas quaerat ipsa in veniam modi delectus, repellat, soluta distinctio dolorum quidem minus ut repellendus incidunt dolores, cum rem. Est, facilis.</div>
-          </div>
-        </div>
-            <button class="slider__btn slider__btn--left">&larr;</button>
-            <button class="slider__btn slider__btn--right">&rarr;</button>
-        <div class="dots"></div>
-      </div>
-
+    
 
     <footer>
       <div class="refrences" id="links">

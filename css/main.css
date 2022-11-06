@@ -203,7 +203,7 @@ button {
   border-radius: 50px;
   color: #333;
   background: #def2f1;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
   box-shadow: 0 3px 20px 0 #0000003b;
 }
 
@@ -361,35 +361,6 @@ a.refrences-item:hover {
   background-repeat: no-repeat;
 }
 
-.website-link {
-  width: 150px;
-  margin-top: 80px;
-  background-color: #ff4500;
-}
-
-a {
-  font-size: 25px;
-  color: white;
-}
-
-a.weblink {
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 1px solid #2e2e4c;
-  box-shadow: 3px 9px 16px rgb(0, 0, 0, 0.4),
-    -3px -3px 10px rgba(255, 255, 255, 0.06),
-    inset 14px 14px 26px rgb(0, 0, 0, 0.3),
-    inset -3px -3px 15px rgba(255, 255, 255, 0.05);
-}
-
-.website-link:hover {
-  background-color: #570861;
-}
-
 h2 .bounce {
   opacity: 0;
   display: inline-block;
@@ -521,10 +492,17 @@ h2 .bounce {
   animation-name: bubble;
 }
 
+/* modal styles */
+
+.section {
+  width: 100%;
+  height: 100%;
+}
+
 /* SLIDER */
 .slider {
-  max-width: 100rem;
-  height: 50rem;
+  max-width: 100%;
+  height: 100%;
   margin: 0 auto;
   position: relative;
 
@@ -536,7 +514,7 @@ h2 .bounce {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 50rem;
+  height: 35rem;
 
   display: flex;
   align-items: center;
@@ -555,7 +533,7 @@ h2 .bounce {
 
 .slider__btn {
   position: absolute;
-  top: 50%;
+  top: 90%;
   z-index: 10;
 
   border: none;
@@ -570,18 +548,18 @@ h2 .bounce {
 }
 
 .slider__btn--left {
-  left: 6%;
+  left: 10%;
   transform: translate(-50%, -50%);
 }
 
 .slider__btn--right {
-  right: 6%;
+  right: 10%;
   transform: translate(50%, -50%);
 }
 
 .dots {
   position: absolute;
-  bottom: 5%;
+  bottom: 0rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -597,9 +575,6 @@ h2 .bounce {
   margin-right: 1.75rem;
   cursor: pointer;
   transition: all 0.5s;
-
-  /* Only necessary when overlying images */
-  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
 }
 
 .dots__dot:last-child {
@@ -611,64 +586,85 @@ h2 .bounce {
   opacity: 1;
 }
 
-/* TESTIMONIALS */
-.testimonial {
-  width: 65%;
+/* GAME INFORMATION BLOCK */
+.information-block {
+  width: 78%;
   position: relative;
 }
 
-.testimonial::before {
-  content: "\201C";
-  position: absolute;
-  top: -5.7rem;
-  left: -6.8rem;
-  line-height: 1;
-  font-size: 20rem;
-  font-family: inherit;
-  color: var(--color-primary);
-  z-index: -1;
-}
-
-.testimonial__header {
+.information__header {
   font-size: 2.25rem;
   font-weight: 500;
+  color: #b9b9b9;
+  font-weight: bold;
   margin-bottom: 1.5rem;
 }
 
-.testimonial__text {
+.information__text {
   font-size: 1.7rem;
   margin-bottom: 3.5rem;
-  color: #666;
+  color: #b9b9b9;
 }
 
-.testimonial__author {
-  margin-left: 3rem;
-  font-style: normal;
-
-  display: grid;
-  grid-template-columns: 6.5rem 1fr;
-  column-gap: 2rem;
-}
-
-.testimonial__photo {
-  grid-row: 1 / span 2;
-  width: 6.5rem;
-  border-radius: 50%;
-}
-
-.testimonial__name {
-  font-size: 1.7rem;
-  font-weight: 500;
-  align-self: end;
-  margin: 0;
-}
-
-.testimonial__location {
-  font-size: 1.5rem;
+.linkstyle {
+  float: left;
 }
 
 .section__title--testimonials {
   margin-bottom: 4rem;
+}
+
+.modal {
+  position: absolute;
+  left: 0.8rem;
+  top: 123.5rem;
+  height: 34rem;
+  width: 66rem;
+  margin: 15px;
+  background-color: #1c1c1c;
+  border-color: black;
+  z-index: 1;
+}
+
+.open-modal {
+  position: absolute;
+  left: 0.8rem;
+  top: 125.5rem;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.close-modal {
+  position: absolute;
+  left: 60rem;
+  top: 1rem;
+  background-color: #ff4500;
+  z-index: 2;
+  font-size: 2rem;
+}
+
+.website-link {
+  width: max-content;
+  margin-top: 0.5rem;
+  background-color: #313646;
+}
+
+a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.website-link:hover {
+  background-color: #570861;
+}
+
+.code-link {
+  background-color: #313646;
+}
+
+.code-link:hover {
+  background-color: #570861;
 }
 
 /* =============
